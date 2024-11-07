@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Data -->
+    <title>Terms and Conditions - KatochMed</title> <!-- Replace with the actual title if needed -->
+
+    <!-- Production Stylesheets -->
+    <link rel="stylesheet" href="production/css/terms.min.css">
+    <!-- Development Stylesheets -->
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/fontawesome.min.css">
+    <link rel="stylesheet" href="lib/css/responsive.css">
+    <link rel="stylesheet" href="lib/css/select2.min.css">
+    <link rel="stylesheet" href="lib/css/spacing.css">
+    <link rel="stylesheet" href="lib/css/style.css">
+    <link rel="stylesheet" href="lib/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="lib/css/magnific-popup.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body onLoad="typeWriter()">
+    <!-- Header -->
+    <header>
+        <h1>KatochMed</h1> <!-- Placeholder for header content -->
+        <!-- Include your header content here -->
+    </header>
+
+    <!-- About Start -->
+    <div class="about-page pt_60 pb_30">
+        <div class="container">
+            <h2>TERMS AND CONDITIONS</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>By accessing and using the website of KatochMed, you agree to comply with and be bound by these Terms and Conditions. Please read them carefully, as they govern your use of our website and services. If you do not agree with these terms, you should not use our website. We reserve the right to modify these Terms and Conditions at any time without prior notice.</p>
+                    <p>The content on this website, including articles, blogs, or any other health information, is provided for general informational purposes only. It is not intended as medical advice and should not replace consultation with a qualified healthcare professional. Always seek the advice of a physician or other qualified health provider with any questions regarding a medical condition or treatment. Reliance on any information provided on this website is at your own risk.</p>
+                    <p>All content on this website, including text, graphics, logos, and images, is the property of KatochMed or its content suppliers and is protected by applicable copyright and trademark laws. You may not reproduce, distribute, modify, or exploit any content on this website without express written permission from the Hospital. Personal, non-commercial use of the content is permitted, provided you retain any proprietary notices.All content on this website, including text, graphics, logos, and images, is the property of [Hospital Name] or its content suppliers and is protected by applicable copyright and trademark laws. You may not reproduce, distribute, modify, or exploit any content on this website without express written permission from the Hospital. Personal, non-commercial use of the content is permitted, provided you retain any proprietary notices.</p>
+                    <p>By using our website, you agree to use it for lawful purposes only. You may not use the website to post or transmit any material that is unlawful, harmful, threatening, or otherwise objectionable. Additionally, you agree not to engage in activities that could harm or interfere with the proper functioning of our website or the experience of other users. We reserve the right to terminate access to our website if you violate these terms.</p>
+                    <p>Our use of any personal information you submit to the website is governed by our Privacy Policy, which outlines our commitment to protecting your privacy. By using our website, you consent to the collection and use of your information as outlined in our Privacy Policy. We make every effort to protect your information; however, we cannot guarantee the security of data transmitted over the internet and advise users to take necessary precautions.</p>
+                    <p>To the fullest extent permitted by law, KatochMed and its affiliates, employees, or agents will not be liable for any damages (including, without limitation, incidental and consequential damages, lost profits, or damages resulting from lost data or business interruption) arising out of the use or inability to use this website or any information contained on it. This includes any damages resulting from reliance on information provided on our site.</p>
+                    <p>These Terms and Conditions are governed by the laws of Maharashtra/India, without regard to its conflict of laws principles. Any disputes arising from or relating to these Terms and Conditions or the use of our website will be resolved through arbitration in accordance with the rules of, and the decision of the arbitrator(s) will be binding. You agree to submit to the jurisdiction of the courts in [Mumbai,Maharashtra/India] for any enforcement of arbitration awards.</p>
+ </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Footer -->
+    <footer>
+        <!-- Include your footer content here -->
+    </footer>
+
+    <script>
+        var i = 0;
+        var txt = 'WELCOME TO KatochMed';
+        var speed = 60;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("typeit").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+
+    <!-- JavaScript -->
+    <script defer src="lib/js/jquery-3.4.1.min.js"></script>
+    <script defer src="lib/js/popper.min.js"></script>
+    <script defer src="lib/js/bootstrap.bundle.min.js"></script>
+    <script defer src="lib/js/all.min.js"></script>
+    <script defer src="lib/js/select2.full.min.js"></script>
+    <script defer src="js/about.js"></script>
+
+</body>
+
+</html>

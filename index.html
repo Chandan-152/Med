@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="A website which connects doctors, patients and services like ambulance provide">
+    <meta name="keywords" content="KatochMed, Patient, Hospital, Doctor, Ambulance, Medical Service, Appointment">
+    <title>KatochMed</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="images/Icon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/Icon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/Icon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/Icon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/Icon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/Icon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/Icon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/Icon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/Icon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/Icon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/Icon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Icon/favicon-16x16.png">
+    <link rel="manifest" href="images/Icon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/Icon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Google AdSense -->
+    <script data-ad-client="ca-pub-2262368880439944" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176269755-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-176269755-1');
+    </script>
+
+    <!-- To run web application in full-screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Microsoft Tiles -->
+    <meta name="msapplication-config" content="images/Icon/browserconfig.xml" />
+
+    <!-- Facebook Meta Data -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://KatochMed.onrender.com/">
+    <meta property="og:title" content="KatochMed">
+    <meta property="og:image" content="https://KatochMed.onrender.comimages/icon.JPEG">
+    <meta property="og:description" content="A website which connects doctors, patients and services like ambulance provide">
+    <meta property="og:site_name" content="KatochMed">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter Meta Data -->
+    <meta name="twitter:card" content="A website which connects doctors, patients and services like ambulance provide">
+    <meta name="twitter:site" content="@ site_account">
+    <meta name="twitter:creator" content="@individual_account">
+    <meta name="twitter:url" content="https://KatochMed.onrender.com/">
+    <meta name="twitter:title" content="KatochMed">
+    <meta name="twitter:description" content="A website which connects doctors, patients and services like ambulance provide">
+    <meta name="twitter:image" content="https://KatochMed.onrender.comimages/icon.JPEG">
+
+    <!-- CORS Policy -->
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data: *; default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-7T915H29JY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-7T915H29JY');
+    </script>
+</head>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="production/css/home.min.css">
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/fontawesome.min.css">
+    <link rel="stylesheet" href="lib/css/responsive.css">
+    <link rel="stylesheet" href="lib/css/select2.min.css">
+    <link rel="stylesheet" href="lib/css/spacing.css">
+    <link rel="stylesheet" href="lib/css/style.css">
+    <link rel="stylesheet" href="lib/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="lib/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="lib/css/magnific-popup.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body onload="typeWriter()">
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-light" id="header">
+        <img src="images/appointment.JPEG" width="100" height="100" alt="logo">
+        <ul class="list-group list-group-horizontal-sm">
+            <li class="list-group-item"><i class="fa fa-envelope"></i><span>drkatoch@yahoo.co.in</span></li>
+            <li class="list-group-item"><i class="fa fa-phone"></i><span>+91 9869074346</span></li>
+        </ul>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">ABOUT US</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownPatient" role="button" data-toggle="dropdown">PATIENT</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownPatient">
+                        <a class="dropdown-item" href="/patientregistration">REGISTRATION</a>
+                        <a class="dropdown-item" href="/patientlogin">LOGIN</a>
+                        <a class="dropdown-item" href="/patienthome">PATIENT HOME</a>
+                        <a class="dropdown-item" href="/logout">LOGOUT</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownDoctor" role="button" data-toggle="dropdown">DOCTOR</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownDoctor">
+                        <a class="dropdown-item" href="/doctorregistration">REGISTRATION</a>
+                        <a class="dropdown-item" href="/doctorlogin">LOGIN</a>
+                        <a class="dropdown-item" href="/doctorhome">DOCTOR HOME</a>
+                        <a class="dropdown-item" href="/logout">LOGOUT</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link" href="/services">SERVICES</a></li>
+                <li class="nav-item"><a class="nav-link" href="/gallery">GALLERY</a></li>
+                <li class="nav-item"><a class="nav-link" href="/news">NEWS</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="banner-slider" style="background-image: url(images/banner.JPEG)">
+        <div class="bg"></div>
+        <div class="bannder-table">
+            <div class="banner-text">
+                <h1 id="typeit"></h1>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="about-area pt_60 pb_90">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 mt_30">
+                <div class="about-content">
+                    <div class="headline-left">
+                        <h2><span>QUALITY MEDICAL SERVICES</span> MAKE OUR PATIENTS HAPPY</h2>
+                    </div>
+                    <p>Our commitment to quality healthcare ensures that every patient receives personalized, compassionate treatment. With a focus on excellence, we strive to make every patient’s experience positive and fulfilling.<br></p>
+                    <div class="progress-gallery main-prog">
+                        <div class="bar-container">
+                            <p>Neurology</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" style="width: 95%"></div>
+                            </div>
+                            <div class="percentage-show">95%</div>
+                        </div>
+                        <div class="bar-container">
+                            <p>Dentistry</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" style="width: 80%"></div>
+                            </div>
+                            <div class="percentage-show">80%</div>
+                        </div>
+                        <div class="bar-container">
+                            <p>Radiology</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="88" style="width: 88%"></div>
+                            </div>
+                            <div class="percentage-show">88%</div>
+                        </div>
+                        <div class="bar-container">
+                            <p>Cardiology</p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="82" style="width: 82%"></div>
+                            </div>
+                            <div class="percentage-show">82%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-auto">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-Fdo_HT3X80" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="choose-area pb_90">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="headline">
+                    <h2>WHY CHOOSE US</h2>
+                    <h3>We have some special criteria that will help you</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="choose-item flex" style="background-image: url(images/cloak.JPEG)">
+                    <div class="choose-icon"><i class="fas fa-clock fa-3x"></i></div>
+                    <div class="choose-text">
+                        <h4>QUICK RESPONSE</h4>
+                        <p>We prioritize quick responses to ensure timely and efficient healthcare for every patient.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="choose-item flex" style="background-image: url(images/satisfication.JPEG)">
+                    <div class="choose-icon"><i class="fa fa-thumbs-up fa-3x"></i></div>
+                    <div class="choose-text">
+                        <h4>100% SATISFACTION</h4>
+                        <p>We are dedicated to providing care that ensures complete satisfaction for every patient.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="choose-item flex" style="background-image: url(images/qualityservice.JPEG)">
+                    <div class="choose-icon"><i class="fa fa-globe fa-3x"></i></div>
+                    <div class="choose-text">
+                        <h4>QUALITY SERVICE</h4>
+                        <p>We provide high-quality services focused on patient well-being and satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="feature-area feature-two bg-area pt_90 pb_90">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="headline">
+                    <h2>SPECIAL FEATURES</h2>
+                    <h3>We offer some awesome features that will help you</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-hospital-alt fa-3x"></i></div>
+                    <div class="feature-text">
+                        <h4>Planned Space Design</h4>
+                        <p>Our Clinic is built with carefully planned spaces to ensure comfort, efficiency, and a healing environment for all patients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-procedures fa-3x"></i></div>
+                    <div class="feature-text">
+                        <h4>Good Medical Facilities</h4>
+                        <p>We offer advanced medical technology and comfortable facilities to provide the best care possible.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-ambulance fa-3x"></i></div>
+                    <div class="feature-text">
+                        <h4>Ambulance Service</h4>
+                        <p>On Process.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-laptop-medical fa-3x"></i></div>
+                    <div class="feature-text">
+                        <h4>Computerized Platform</h4>
+                        <p>Our state-of-the-art technology streamlines processes for faster, more accurate patient care.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-stethoscope fa-3x"></i></div>
+                    <div class="feature-text">
+                        <h4>Reduced Supervision</h4>
+                        <p>We offer care with reduced supervision, empowering patients to manage their health with confidence.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="feature-item">
+                    <div class="feature-icon"><i class="fas fa-robot fa-3x"></i></div>
+                    <div class="feature-text">
+                        <h4>Modern Technology</h4>
+                        <p>We use the latest medical technology to provide accurate diagnoses and effective treatments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="services-area pt_90 pb_90">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="headline">
+                    <h2>OUR SERVICES</h2>
+                    <h3>We are always here to serve you some awesome services</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="services-item effect-item">
+                    <a href="view2" class="image-effect">
+                        <div class="services-photo" style="background-image: url(images/newborn.JPEG)"></div>
+                    </a>
+                    <div class="services-text">
+                        <h3><a href="view2 ">Newborn Care</a></h3>
+                        <p>We provide expert, gentle care to ensure the health and well-being of your newborn.</p>
+                        <div class="button-bn"><a href="view2">Read More <i class="fa fa-chevron-circle-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="services-item effect-item">
+                    <a href="view2" class="image-effect">
+                        <div class="services-photo" style="background-image: url(images/mothercare.JPEG)"></div>
+                    </a>
+                    <div class="services-text">
+                        <h3><a href="view2">Mother Care</a></h3>
+                        <p>Dedicated to providing expert care and support for mothers at every stage of their journey.</p>
+                        <div class="button-bn"><a href="view2">Read More <i class="fa fa-chevron-circle-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="services-item effect-item">
+                    <a href="view2" class="image-effect">
+                        <div class="services-photo" style="background-image: url(images/criticaltreatement.JPEG)"></div>
+                    </a>
+                    <div class="services-text">
+                        <h3><a href="view2">Critical Treatment</a></h3>
+                        <p>Providing immediate and specialized treatment for patients in critical condition with precision and compassion.</p>
+                        <div class="button-bn"><a href="view2">Read More <i class="fa fa-chevron-circle-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="services-item effect-item">
+                    <a href="view2" class="image-effect">
+                        <div class="services-photo" style="background-image: url(images/lab.JPEG)"></div>
+                    </a>
+                    <div class="services-text">
+                        <h3><a href="view2">Modern Laboratory</a></h3>
+                        <p>Equipped with advanced technology to deliver accurate and timely diagnostic </p>                        </p>
+                        <div class="button-bn"><a href="view2">Read More <i class="fa fa-chevron-circle-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="services-item effect-item">
+                    <a href="view2" class="image-effect">
+                        <div class="services-photo" style="background-image: url(images/test.JPEG)"></div>
+                    </a>
+                    <div class="services-text">
+                        <h3><a href="view2">All Major Tests</a></h3>
+                        <p>Offering a wide range of major tests for accurate diagnosis and treatment planning.</p>
+                        <div class="button-bn"><a href="view2">Read More <i class="fa fa-chevron-circle-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="services-item effect-item">
+                    <a href="view2" class="image-effect">
+                        <div class="services-photo" style="background-image: url(images/dental.JPEG)"></div>
+                    </a>
+                    <div class="services-text">
+                        <h3><a href="view2">Dental Care</a></h3>
+                        <p>Providing expert dental services to ensure healthy, beautiful smiles for all patients.</p>
+                        <div class="button-bn"><a href="view2">Read More <i class="fa fa-chevron-circle-right"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="testimonials">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="customers-testimonials" class="owl-carousel">
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-circle" src="images/pat1.JPEG" alt="user1">
+                            <p>Dr.Ramesh Katoch is a trusted Family Physician and Consultant Homoeopath, dedicated to providing holistic and personalized healthcare.</p>
+                        </div>
+                        <div class="testimonial-name">Dr.Ramesh Katoch</div>
+                    </div>
+                    <div class="item">
+                        <div class="shadow-effect">
+                            <img class="img-circle" src="images/pat2.JPEG" alt="user2">
+                            <p>Dr.Renuka Katoch is a compassionate and experienced family physician dedicated to providing comprehensive healthcare for individuals and families of all ages.</p>
+                        </div>
+                        <div class="testimonial-name">Dr.Renuka Katoch</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 KatochMed. All rights reserved.</p>
+</footer>
+
+<script>
+    var i = 0, txt = 'WELCOME TO KatochMed', speed = 60;
+    function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("typeit").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
+</script>
+
+<script defer src="lib/js/jquery-3.4.1.min.js"></script>
+<script defer src="lib/js/popper.min.js"></script>
+<script defer src="lib/js/owl.carousel.min.js"></script>
+<script defer src="lib/js/bootstrap.bundle.js"></script>
+<script defer src="lib/js/all.min.js"></script>
+<script defer src="lib/js/select2.full.min.js"></script>
+<script defer src="js/home.js"></script>
+
+</body>
+</html>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="path/to/your/styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+
+    <!--Footer Start-->
+    <!--Call Start-->
+    <div class="call-us" style="background-image: url(images/background.JPEG)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 col-md-8 col-12">
+                    <div class="call-text">
+                        <h3>Now getting an appointment in any hospital has become online & easy!?</h3>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="button">
+                        <a href="patientregistration"> Book Appointment Now <i class="fa fa-chevron-circle-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Call End-->
+
+    <!--Address Start-->
+    <div class="feature-area feature-two bg-area pt_90 pb_90">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="headline">
+                        <h4>Address</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <br>
+                            <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>
+                                Hare Krishna Polyclinic<br>
+                                165.sao bldg,S.M.Road<br>
+                                Near Post Office Chunabhatti(E)<br>
+                                Mumbai-400 022
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <br>
+                            <i class="fa fa-phone fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>
+                                Support: +91 90826 11705
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <br>
+                            <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="feature-text">
+                            <p>
+                                support:abhaygupta57453@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="aman">
+                            <div class="footer-item">
+                                <ul class="footer-social">
+                                    <li><a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="http://www.twitter.com"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="http://www.pinterest.com"><i class="fab fa-pinterest"></i></a></li>
+                                    <li><a href="http://www.youtube.com"><i class="fab fa-youtube"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Address END-->
+
+    <div class="footer-bottom pt_50 pb_50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-menu">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/terms">Terms and Conditions</a></li>
+            <li><a href="/privacypolicy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="copy-text">
+          <p>
+            Copyright &copy; 2024
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footer End-->
+
+<!--Scroll-Top-->
+<div class="scroll-top" onclick="topFunction()">
+  <i class="fa fa-angle-up"></i>
+</div>
