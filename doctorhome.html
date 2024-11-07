@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Portal - KatochMed</title>
+
+    <!-- Production Stylesheets -->
+    <link rel="stylesheet" href="/production/css/loginRegister.min.css">
+    <!-- Development Stylesheets -->
+    <link rel="stylesheet" href="/lib/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/css/fontawesome.min.css">
+    <link rel="stylesheet" href="/lib/css/responsive.css">
+    <link rel="stylesheet" href="/lib/css/select2.min.css">
+    <link rel="stylesheet" href="/lib/css/spacing.css">
+    <link rel="stylesheet" href="/lib/css/style.css">
+    <link rel="stylesheet" href="/lib/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/lib/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="/lib/css/magnific-popup.css">
+    <link rel="stylesheet" href="/css/header.css">
+</head>
+
+<body onLoad="typeWriter()">
+    <!-- Header -->
+    <header>
+        <h1>KatochMed</h1>
+        <!-- Include your header content here -->
+    </header>
+
+    <!-- About Start -->
+    <div class="about-page pt_60 pb_30">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Welcome to our doctor portal</h1><br>
+                    <h3>Hi DOCTOR_NAME</h3><br>
+
+                    <div class="faq-group headstyle mt-30 contact-form">
+                        <div id="accordion">
+                            <div class="faq-item card">
+                                <div class="faq-header" id="heading1">
+                                    <button class="faq-button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                        <i class="fa fa-caret-right"></i> View Current Appointments
+                                    </button>
+                                </div>
+                                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+                                    <div class="faq-body">
+                                        <ol>
+                                            <!-- Replace with actual appointment data -->
+                                            <li>
+                                                <div class="col-lg-12">
+                                                    <b>Patient Name: </b> PATIENT_NAME <br />
+                                                    <b>Patient Phone Number: </b> PATIENT_PHONE <br />
+                                                    <b>Appointment Status: </b> APPOINTMENT_STATUS <br />
+                                                    <b>Appointment Date: </b> APPOINTMENT_DATE <br />
+                                                    <b>Appointment Time: </b> APPOINTMENT_TIME <br />
+                                                    <a href="/doctorhome/APPOINTMENT_ID/accept" class="btn btn-xs btn-confirm">Confirm Appointment</a>
+                                                    &nbsp;
+                                                    <a href="/doctorhome/APPOINTMENT_ID/reject" class="btn btn-xs btn-danger">Reject Appointment</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <p>Currently there is no appointment!!!</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="faq-item card">
+                                <div class="faq-header" id="heading2">
+                                    <button class="faq-button collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+                                        <i class="fa fa-caret-right"></i> View Past Appointments
+                                    </button>
+                                </div>
+                                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+                                    <div class="faq-body">
+                                        <ol>
+                                            <!-- Replace with actual past appointment data -->
+                                            <li>
+                                                <div class="col-lg-12">
+                                                    <b>Patient Name: </b> PATIENT_NAME <br />
+                                                    <b>Patient Phone Number: </b> PATIENT_PHONE <br />
+                                                    <b>Appointment Status: </b> APPOINTMENT_STATUS <br />
+                                                    <b>Appointment Date: </b> APPOINTMENT_DATE <br />
+                                                    <b>Appointment Time: </b> APPOINTMENT_TIME <br />
+                                                    <b>Prescription</b><br />
+                                                    <b>Symptoms: </b> SYMPTOMS <br />
+                                                    <b>Tests: </b> TESTS ```html
+                                                    <br />
+                                                    <b>Medicines: </b> MEDICINES <br />
+                                                    <b>Remarks: </b> REMARKS <br />
+                                                    <b>Doctor Signature: </b><br />
+                                                    <img src="DOCTOR_SIGNATURE_URL" width="100" height="100" alt="signature"><br /><br />
+                                                    <a href="/doctorhome/PATIENT_ID/APPOINTMENT_ID/addprescription" class="btn btn-xs btn-confirm">Add Prescription</a>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <p>Currently there is no appointment!!!</p>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="faq-item card">
+                                <div class="faq-header" id="heading3">
+                                    <button class="faq-button collapsed" data-toggle="collapse" data-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
+                                        <i class="fa fa-caret-right"></i> Update Credentials
+                                    </button>
+                                </div>
+                                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordion">
+                                    <div class="faq-body">
+                                        <p>
+                                            <a href="/doctorhome/DOCTOR_ID/edit" class="btn btn-primary btn-large">Update Credentials</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Footer -->
+    <footer>
+        <!-- Include your footer content here -->
+    </footer>
+
+    <script>
+        var i = 0;
+        var txt = 'WELCOME TO KatochMed';
+        var speed = 60;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("typeit").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
+
+    <!-- JavaScript -->
+    <script defer src="/lib/js/jquery-3.4.1.min.js"></script>
+    <script defer src="/lib/js/popper.min.js"></script>
+    <script defer src="/lib/js/bootstrap.bundle.min.js"></script>
+    <script defer src="/lib/js/all.min.js"></script>
+    <script defer src="/lib/js/select2.full.min.js"></script>
+    <script defer src="/js/about.js"></script>
+</body>
+</html>
